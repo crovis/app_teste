@@ -4,5 +4,5 @@ Rails.application.routes.draw do
   get "/" => "home#inicio"
 
   # Página com modelos 
-  get "/modelos" => "models#inicio"
+  get "/modelos" => "modelos#inicio"
 end

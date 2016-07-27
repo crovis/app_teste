@@ -1,4 +1,4 @@
-class ModelsController < ApplicationController
+class ModelosController < ApplicationController
 
   def inicio
     buscar_e_persistir_modelos_em_webmotors
