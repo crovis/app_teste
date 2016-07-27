@@ -1,0 +1,23 @@
+
+<!-- <a href="/"><< Voltar</a>
+<ul>
+  <%# models.each do |model| %>
+    <li><%#= model.name %></li>
+  <%# end %>
+</ul> -->
+
+<div class="container">
+	<div class="col-md-4">
+
+		<a class="btn btn-default" role="button" href="/"><< Voltar</a>
+
+		<ul class="list-unstyled">
+		  <% @modelos.each do |modelo| %>
+		    <li><%= modelo.nome %></li>
+		  <% end %>
+		</ul>
+
+		<%= paginate @modelos %>
+
+	</div>
+</div>

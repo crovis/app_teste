@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AdtsysApplicantTest</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<!-- Começo do cabeçalho -->
+	<div class="header">
+		<div class="container">
+			<div class="md-col-4">
+				<h1>Adtsys</h1>
+				<h2>Teste do candidato - Clovis Silva</h2>
+			</div>
+		</div>
+	</div>
+
+	<hr>
+	<!-- Fim do cabeçalho -->
+
+	<%= yield %>
+
+</body>
+</html>

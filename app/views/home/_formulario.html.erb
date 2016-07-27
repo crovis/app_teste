@@ -1,0 +1,15 @@
+	<%#= form_tag("/modelos", method: "get", class: "form form-horizontal") do %>
+	<form action="/modelos" method="GET">
+		<p>
+		    <label>Escolha a Fabricante:</label>
+		    <!--<select name="webmotors_make_id" class="form-control"> -->
+		    <select name="codigo_modelo" class="form-control">
+		      <% @marcas.each do |marca| %>
+		        <option value="<%= marca.webmotors_id %>"><%= marca.nome %></option>
+		      <% end %>
+		    </select>
+		</p>
+
+	  	<input type="submit" class="btn btn-primary" value="Buscar modelos">
+	</form>
+	<%# end %>
